@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -6,23 +7,20 @@ namespace _Project.Runtime.Scripts
 {
     public class GridGenerator : MonoBehaviour
     {
+        [Header("Cell Dimensions")]
         public int Width;
         public int Height;
         
+        [Header("Cell Spacing")]
         public float CellSpacingX;
-        
         public float CellSpacingY;
-        
+
+        [Header("")]
         public GameObject GridPrefab;
-        
         public Vector3 StartOffset = Vector3.zero;
+        
 
-        private void Start()
-        {
-            GenerateGrid();
-        }
-
-        private void GenerateGrid()
+        public void GenerateGrid()
         {
             CellSpacingX += GridPrefab.transform.localScale.x;
             CellSpacingY += GridPrefab.transform.localScale.y;
