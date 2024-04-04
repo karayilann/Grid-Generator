@@ -46,8 +46,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Width: 0
   Height: 0
-  CellSpacingX: 0
-  CellSpacingY: 0
+  CellSpacingX: 1
+  CellSpacingY: 1
   GridPrefab: {fileID: 1542681733770625152, guid: 4a03366808f6da4428502475c334568e, type: 3}
   _MyGridToolMhkPrefab: {fileID: 6332684847178802929}
   StartOffset: {x: 0, y: 0, z: 0}

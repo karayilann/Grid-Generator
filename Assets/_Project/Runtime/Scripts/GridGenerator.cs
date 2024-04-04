@@ -19,7 +19,6 @@ namespace _Project.Runtime.Scripts
         public GameObject GridPrefab;
         public Vector3 StartOffset = Vector3.zero;
         
-
         public void GenerateGrid()
         {
             CellSpacingX += GridPrefab.transform.localScale.x;
@@ -33,7 +32,7 @@ namespace _Project.Runtime.Scripts
                     
                     _prefabPosition += StartOffset;
 
-                    var instantiatedObject = Instantiate(GridPrefab, _prefabPosition, Quaternion.identity);
+                    var instantiatedObject = Instantiate(GridPrefab, _prefabPosition, Quaternion.identity, gameObject.transform);
                 }
             }
         }
