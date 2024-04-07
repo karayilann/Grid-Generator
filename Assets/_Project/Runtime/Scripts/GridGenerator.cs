@@ -19,7 +19,7 @@ namespace _Project.Runtime.Scripts
         public GameObject GridPrefab;
         public Vector3 StartOffset = Vector3.zero;
         
-        public void GenerateGrid()
+        public void GenerateGridXY()
         {
             CellSpacingX += GridPrefab.transform.localScale.x;
             CellSpacingY += GridPrefab.transform.localScale.y;
@@ -36,5 +36,12 @@ namespace _Project.Runtime.Scripts
                 }
             }
         }
+        
+        // Inspector ekranından seçilen eksenlerde üretecek minimum kodlu grid generator yazılacak.
+        // Seçilen eksenin buraya göndereceği değer ile üretecek
+        
+        
+        
+        
     }
 }
